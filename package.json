@@ -1,0 +1,10 @@
+{
+  "name": "pitux",
+  "version": "0.1.1",
+  "scripts": {
+    "install": "node index.js"
+  },
+  "dependencies": {
+    "opn": "^4.0.2"
+  }
+}
