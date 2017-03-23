@@ -71,7 +71,7 @@ var pitux = new Client({
   userId: user.content,
   url: server.content
 })
-logux.start()
+pitux.start()
 ```
 
 
