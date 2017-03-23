@@ -120,7 +120,7 @@ var favicon = document.querySelector('link[rel~="icon"]')
 var notice  = document.querySelector('.offline-notice')
 
 pitux.sync.on('state', function () {
-  if (logux.sync.connected) {
+  if (pitux.sync.connected) {
     favicon.href = '/favicon.ico'
     notice.classList.add('.offline-notice_hidden')
   } else {
@@ -144,7 +144,7 @@ window.onbeforeunload = function (e) {
 
 ### Cross-Tab Communication
 
-If user will open website in two different browser tabs, Logux anyway will have
+If user will open website in two different browser tabs, Pitux anyway will have
 single storage, so JS in tabs will have same actions.
 
 You can set `tab` key in metadata to isolate action only in current tab:
